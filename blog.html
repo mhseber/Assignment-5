@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- font Awesome -->
+    <script src="https://kit.fontawesome.com/3eac091a3c.js" crossorigin="anonymous"></script>
+    <!-- styles link -->
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Blog</title>
+</head>
+
+<body>
+    <!-- nav section -->
+    <nav>
+        <div class="flex justify-around bg-[#F9F7F3] pt-5 pb-3 ">
+
+            <div>
+                <button class="btn bg-[#B4F461]">Home</button>
+            </div>
+            <div class="flex ">
+                <img src="assets/logo.png" alt="">
+                <div>
+                    <h3 class="w-50 h-6 font-semibold text-xl text-[#111111] pt-3 pl-2 ">Donate Bangladesh</h3>
+                </div>
+            </div>
+            <div class="flex pt-2">
+                <img class="w-[18.96px] h-[18.69px] mt-2 mr-1" src="assets/coin.png" alt="">
+                <p class="w-24 h-6 text-xl font-medium">10000 BDT</p>
+            </div>
+
+
+        </div>
+    </nav>
+    <div class="mt-10 mb-10">
+        <h1 class="text-5xl font-extrabold">Important FAQ <i class="fa-regular fa-comment"></i></h1>
+    </div>
+    <!-- Q and ANS section -->
+    <section>
+        <div>
+            <div class="join join-vertical w-full">
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" checked="checked" />
+                    <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                    <div class="collapse-content">
+                        <p>In simpler terms, the DOM allows programming languages like JavaScript to interact with,
+                            manipulate, and modify the structure, style, and content of a webpage dynamically. Using the
+                            DOM, developers can access and update elements, change content, add or remove nodes, and
+                            modify styles without having to reload the page.</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                    <div class="collapse-content">
+                        <p>To select an element from the DOM using JavaScript, you can use various methods provided by
+                            the document object. Here are some commonly used methods:
+
+                            1. getElementById()
+                            Selects an element by its unique ID. <br> 2. getElementsByClassName()
+                            Selects all elements with a specific class name (returns an HTMLCollection, which is like an
+                            array of elements). <br>3. getElementsByTagName()
+                            Selects all elements with a specific tag name (like div, p, etc.). <br>4. querySelector()
+                            Selects the first element that matches a CSS selector. <br>5. querySelectorAll()
+                            Selects all elements that match a CSS selector (returns a NodeList). <br>These methods allow
+                            you to access and manipulate specific elements in the DOM.</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-medium">What is event delegation in the context of the
+                        DOM,and why is it useful?</div>
+                    <div class="collapse-content">
+                        <p>Event delegation is a technique in the DOM where a single event listener is attached to a
+                            parent element to handle events for its child elements, rather than adding event listeners
+                            to individual child elements. This is particularly useful when working with dynamically
+                            added elements or when you have a large number of similar child elements.</p>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border-base-300 border">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes
+                            and style using the DOM? </div>
+                        <div class="collapse-content">
+                            <p>To manipulate an element's attributes and styles using the DOM, you can use JavaScript
+                                methods and properties to interact with the specific element. Here's how you can do it:
+                                <br>1. Manipulating Attributes:
+                                You can get, set, or remove attributes of an element using methods like getAttribute(),
+                                setAttribute(), and removeAttribute().
+
+                                getAttribute(attribute): Retrieves the value of the specified attribute.
+                                setAttribute(attribute, value): Sets or updates the value of the specified attribute.
+                                removeAttribute(attribute): Removes the specified attribute from the element. <br>
+                                2. Manipulating Styles:
+                                To manipulate the CSS styles of an element, you can use the style property. The style
+                                property allows you to directly set inline styles on an element.
+
+                                element.style.property = value: Sets an individual CSS property (in camelCase format).
+                                element.style.cssText: Allows you to set multiple CSS properties at once using a string.
+                                <br>
+                                3. Adding and Removing Classes:
+                                A cleaner and more scalable way to manipulate an element's style is by adding or
+                                removing CSS classes.
+
+                                classList.add('className'): Adds a class to the element.
+                                classList.remove('className'): Removes a class from the element.
+                                classList.toggle('className'): Toggles the class (adds if not present, removes if
+                                present).
+                                classList.contains('className'): Checks if the element has a specific class. <br>
+                                Summary:
+                                Use getAttribute(), setAttribute(), and removeAttribute() to manipulate an element's
+                                attributes.
+                                Use the style property to set or modify inline CSS styles.
+                                For better scalability, manipulate an element’s classes using the classList methods to
+                                manage styles through CSS classes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+</body>
+
+</html>
