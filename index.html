@@ -21,7 +21,7 @@
 <body>
     <!-- nav section -->
     <nav>
-        <div class="flex justify-around bg-[#F9F7F3] pt-5 pb-3 ">
+        <div class="flex  justify-around bg-[#F9F7F3] pt-5 pb-3 ">
 
             <div>
                 <button id="my-button" class="btn bg-[#B4F461]">Blog</button>
@@ -44,8 +44,12 @@
         <!-- banner button section -->
         <section>
             <div class="flex justify-center mt-14 gap-3 ">
-                <button class="btn w-23 h-6 text-xl font-semibold text-[#111111] bg-[#B4F461]">Donation</button>
-                <button class="btn w-18 h-6 font-medium text-xl text-[#111111B3] ">History</button>
+                <button id="button1"
+                    class="btn w-23 h-6 text-xl font-semibold text-[#111111] hover:bg-[#B4F461] bg-gray-200"
+                    onclick="changeColor('button1')">Donation</button>
+                <button id="button2"
+                    class="btn w-18 h-6 font-medium text-xl text-[#111111B3] hover:bg-[#B4F461] bg-gray-200"
+                    onclick="changeColor('button2')">History</button>
             </div>
         </section>
         <!-- donate section -->
@@ -119,7 +123,6 @@
 
         </section>
     </main>
-
     <script src="js/index.js"></script>
 </body>
 
