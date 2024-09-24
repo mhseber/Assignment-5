@@ -36,11 +36,10 @@ document.getElementById('btn-add-money')
 
         const addMoney = document.getElementById('donationInput').value;
         const addMoneyNumber = parseFloat(addMoney);
-        // const pinNumber = document.getElementById('input-pin-number').value;
         console.log(addMoney);
 
 
-        if (addMoney) {
+        if (isNaN(addMoneyNumber) || addMoneyNumber >= 0) {
             const balance = document.getElementById('account-balance').innerText;
             const balanceNumber = parseFloat(balance)
 
@@ -68,7 +67,7 @@ document.getElementById('btn-add-money2')
         console.log(addMoney);
 
 
-        if (addMoney) {
+        if (isNaN(addMoneyNumber) || addMoneyNumber >= 0) {
             const balance = document.getElementById('account-balance2').innerText;
             const balanceNumber = parseFloat(balance)
 
@@ -92,7 +91,7 @@ document.getElementById('btn-add-money3')
         console.log(addMoney);
 
 
-        if (addMoney) {
+        if (isNaN(addMoneyNumber) || addMoneyNumber >= 0) {
             const balance = document.getElementById('account-balance3').innerText;
             const balanceNumber = parseFloat(balance)
 
